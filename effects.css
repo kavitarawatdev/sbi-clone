@@ -1,0 +1,82 @@
+/* media queries to banking section and its child element */
+@media (max-width : 850px){
+    .banking-section{
+        flex-direction: column;
+    }
+    .banking-section > div{
+        width: 98%;
+    }
+}
+
+
+/* creating moving animation for headline */
+@keyframes movingHeadline {
+    0% {
+        transform: translate(30%, 0 );
+      }
+      100% {
+        transform: translate(-100%, 0);
+      }
+}
+
+/* adding moving effect on headline div */
+.headline > p{
+    width: 3000px;
+    margin-bottom: 10px;
+    animation: movingHeadline 50s linear 0s normal none infinite ;
+    /* animation: movingHeadline 30s linear infinite ; */
+}
+/* adding pause effect on hover */
+.headline > p:hover{
+    animation-play-state: paused;
+}
+
+/* creating color changing animation on superscript texts */
+@keyframes changingSupFontColor {
+    0%{
+        color: #FDDD04;
+    }
+    50%{
+        color: #7FFD04;
+    }100%{
+        color: #04E9FD;
+    }
+}
+/* adding color changing animation on superscript texts */
+sup{
+    font-size: 10.5px;
+    animation: changingSupFontColor 3s linear 1s infinite normal;
+}
+
+/* creationg text color changing effect on information para */
+@keyframes changinSpanFontColor{
+    25%{
+       color: #B30000;
+    }50%{
+       color:#079b07;
+    }75%{
+       color:#249be5;
+    }
+}
+/* adding text color changing effect on information para */
+.information > span {
+    animation: changinSpanFontColor 7s linear 1s infinite normal ;
+}
+
+/* addind pausing effect on animation on hover*/
+.information > span:hover{
+    animation-play-state: paused;
+}
+
+.image > i:hover{
+    background-color: white;
+}
+.social-media > li > span > a:hover{
+    text-decoration: underline #333;
+}
+
+.usefulLinks > div > ul  > li > a:hover {
+    color: #333;
+    text-decoration: underline #333;
+}
+

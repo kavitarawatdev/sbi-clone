@@ -1,0 +1,566 @@
+*{
+    margin: 0%;
+}
+
+body{
+    font-size: 12px;
+    color: #333;
+    background-color: rgb(219, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* settting common properties for all buttons */
+button{
+    outline: none;
+    border: none;
+}
+
+/* setting properite for all ele that have class dlex-box */
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container div */
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0px 0px 10px 5px rgb(131, 128, 128);
+}
+
+/* header */
+.header{
+    display: flex;
+    height:66px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.header > img{
+    margin: 0px 30px;
+}
+
+/* SBI logos */
+.leftLogo{
+    height: 100px;
+    width: 120px;
+    cursor: pointer;
+}
+.rightLogo{
+    height: 58px;
+    width: 70px;
+}
+
+/* nav-bar */
+.navBar{
+    background-color: #003366;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.navBar > ul {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 13px;
+    position: relative;
+}
+.row1 > li{
+    border-right: 1px solid skyblue;
+}
+.navBar > ul > li {
+    list-style: none;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.row1 > li > a {
+    margin: 0px 6px 0px 5px;
+}
+.navBar > ul > li > a > span{
+    font-size: 8px;
+    padding: auto;
+}
+.row2 > li {
+    background-color: #0C5A4C;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    height: 10px;
+}
+.row2 > li > a {
+    margin-right: 7px;
+    color: #FFF45C;
+    text-align: center;
+}
+
+/* information div */
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    margin: 5px 0px;
+    padding : 10px 0px;
+    font-size: 12.5px;
+    box-shadow: 0px 0px 5px 1px  rgb(131, 128, 128);
+    font-weight: 800;
+}
+.information > div {
+    margin-top: 5px;
+    color: #2441E5;
+}
+
+/* banking-section div  */
+.banking-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5px;
+    height: auto;
+}
+
+.banking-section > div {
+    width: 49%;
+    height: 320px;
+    background-color: #F8F8F8;
+    box-shadow:  0px 0px 1px 1px  rgb(131, 128, 128);
+    font-size: 13px;
+    flex-direction: column; 
+    margin-bottom: 5px;
+}
+
+.banking-section > div > span{
+    margin: 5px 0px;
+}
+.banking-section > div > a {
+    font-size: 18px;
+    cursor: pointer;
+}
+.banking-section > div > a > span {
+    color: #265980;
+}
+.banking-section > div > p{
+    text-align: center;
+    margin: 4px 0px 12px 0px;
+    font-size: 14px;
+}
+.new-user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 92.5%;
+    margin-top: 20px;
+}
+.new-user > li{
+    list-style: none;
+    display: flex;
+    height: 70px;
+    width: 40%;
+    cursor: pointer;
+    margin-right: 4%;
+}
+.new-user > li > img{
+    height:25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 1px rgb(131, 128, 128);
+    margin-right: 5px;
+}
+
+/* personal banking div */
+.personal > span   {
+    font-size: 40px;
+    color: #2441E5;
+    -webkit-text-stroke-color: #2441E5;
+    -webkit-text-stroke-width: 2px;
+}
+.personal > button {
+    margin: 10px 0px 10px 0px;
+    height: 35px;
+    width: 100px;
+    background-color: #003366;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+.personal > button > i{
+    margin-left: 12px;
+    background-color: #022D58;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* corporate bakning section div */
+.coorp >span > img {
+    height: 35px;
+    width: 145px;
+}
+/* login div in corp- section  */
+.log-in{
+    height: 27px;
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.log-in > div {
+    border: 1px solid  rgb(131, 128, 128);
+    width: 164px; 
+    height: 27px;
+    background-color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+.log-in > div > span{
+    padding: 0px 3px;
+}
+.log-in > div > i{
+    transform: rotate(90deg);
+    background-color: rgb(210, 203, 203);
+    height: 27px;
+    width: 27px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log-in > button{
+    padding: 0px 15px;
+    background-color: #022D58;
+    color: white;
+    cursor: pointer;
+}
+.coorp > em{
+    width:90%;
+    margin-top: 10px;
+}
+
+/* w-panel */
+.w-panel{
+    height: 48px;
+    width: 100%;
+    
+}
+/* moving headline */
+.headline{
+    color: #A80000;
+    background-attachment: scroll ;
+    background-color: #E2F7FD;
+    height: 10px;
+    font-weight: 700;
+    margin: 10px 0px;
+    padding: 7px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+/* LINKS */
+.links{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.links > div{
+    display: flex;
+    width: 98%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:5px 3px;
+}
+.usefulLinks > div{
+    height: auto;
+    width: 100%;
+    margin: 3px 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.usefulLinks > div > ul  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-evenly;
+    padding: 0px 20px 0px 50px;
+    list-style: ">";
+    margin: 5px;
+}
+.usefulLinks > div > ul > li {
+    justify-self: flex-start;
+    padding: 10px 10px;
+    width: 150px;
+}
+.usefulLinks > div > ul  > li > a {
+    color: #065C79;
+    font-size: 13px;
+    height: 13px;
+    width: auto;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+/* more links button */
+.button-for-links > button{
+    background-color: transparent;
+    outline: none;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 36px;
+    width: 163px;
+    color: #0C5C7A;
+    border: 1px solid rgb(0, 169, 223);
+}
+.button-for-links > button > i {
+    color:  rgb(0, 169, 223);
+    transform: rotate(90deg);
+}
+#hide {
+    display: none;
+}
+
+/* image-slide-handle */
+.image-slide-handle {
+    width: 100%;
+    height: auto;
+    margin-top: 18px;
+}
+/* image div */
+.image-slide-handle > .image{
+    width: 100%;
+    display: flex;
+    background-image: url(image/banner/banner1.jpg);
+    height: 250px;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+/* slide bars */
+.image > i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(251, 239, 239, 0.709);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: rgba(32, 30, 30, 0.696);
+    position: relative;
+    text-shadow: 0px 0px 3px rgb(48, 47, 47);
+    cursor: pointer;
+    z-index: 2;
+    top: 40%;
+
+}
+
+.fa-less-than{
+    left: 1%;
+}
+.fa-greater-than{
+    left: 62%;
+}
+
+/* order- lists of images */
+.image > ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 30%;
+    height: 10px;
+    position: relative;
+    top: 95%;
+    right: 30%;
+}
+.image > ol > li{
+   height: 10px;
+   width: 10px;
+   border-radius: 50%;
+   box-shadow: 0px 0px 4px 10px rgba(251, 239, 239, 0.709) inset;
+   border:1px solid #04E9FD;
+}
+
+
+/* footer */
+.footer{
+    background-color: #0C376A;
+    font-size: 12px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-row1{
+    margin: 10px 5px;
+    height: 20px;
+    width: 300px;
+}
+.footer-row3{
+    margin:10px 5px;
+    height: 20px;
+}
+
+/* social media links div */
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    list-style: none;
+    height: 350px;
+    color:#333;
+    position: fixed;
+    right: 0%;
+    bottom: 0.8%;
+}
+.social-media > li {
+    width: auto;
+    height: 40px;
+    background-color: #c7dbe1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right:-63%;
+}
+.social-media > li > div {
+    border-radius: 50%;
+    margin: 0px 3px;
+}
+.social-media > li > div > i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media > li > span {
+    height: 40px;
+    width: 60px;
+    margin: 8px 15px 0px 2px; 
+
+}
+.social-media > li > span > a{
+    color:#333;
+    text-decoration: none;
+}
+
+/* facebook -logo */
+.facebook{
+    background-color: #083166;
+    height: 35px;
+    width: 35px;
+
+}
+.fa-facebook{
+    color: #083166;
+    background-color: white;
+    font-size: 30px;
+    height: 21px;
+    width: 21px;
+}
+
+/* twitter-logo */
+.twitter{
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0px 3px
+    
+}
+.fa-square-x-twitter{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    height: 20px;
+    width: 20px;
+}
+
+/* youtube-logo */
+.youtube{
+    height: 32px;
+    width: 32px;
+    background-color: #FF0000;
+}
+.fa-youtube{
+    background-color: #FF0000;
+    color: white;
+    font-size: 20px;
+}
+
+/* linkedin -logo*/
+.linked-in{
+    height: 35px;
+    width: 35px;
+    background-color: #0077B5;
+}
+.fa-linkedin-in{
+    background-color: #0077B5;
+    color: white;
+    font-size: 20px;
+}
+
+/* instagram-logo*/
+.fa-square-instagram{
+    color: 	#E1306C;
+    background-color: white;
+    font-size: 35px;
+    height: 25px;
+    width: 25px;
+    margin-left: 3px;
+}
+
+/* pinterest-logo */
+.fa-pinterest{
+    background-color:#E60023;
+    color: white;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+/* whatsapp-logo*/
+.fa-whatsapp{
+    background-color: #25D366; 
+    color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+/* contact-us-img or logo*/
+.contact-us > img {
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+}
+
+
