@@ -308,7 +308,7 @@ button{
     justify-content: space-evenly;
     padding: 0px 20px 0px 50px;
     list-style: ">";
-    margin: 5px;
+    margin: 2px 5px;
 }
 .usefulLinks > div > ul > li {
     justify-self: flex-start;
@@ -376,15 +376,16 @@ button{
     text-shadow: 0px 0px 3px rgb(48, 47, 47);
     cursor: pointer;
     z-index: 2;
-    top: 40%;
 
 }
 
 .fa-less-than{
     left: 1%;
+    top: 46%;
 }
 .fa-greater-than{
     left: 62%;
+    top: 46%;
 }
 
 /* order- lists of images */

@@ -11,7 +11,7 @@ Features :-
 <br>
 => media queries
 <br>
-=>Dropdown
+=>cDropdown events
 <br>
 => Favicon implementations
 <br>
